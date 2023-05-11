@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let nam = parseInt(prompt("Nhap nam"));
+    let laNamnhuan = false;
+    let chiaHet4 = nam % 4 == 0;
+    if (chiaHet4){
+        let chiaHet100= nam % 100 == 0;
+        if (chiaHet100){
+            let chiaHet400= nam % 400 == 0;
+            if(chiaHet400){
+                laNamnhuan=true;
+            }
+        }else{
+            laNamnhuan=true;
+        }
+    }
+    if (laNamnhuan){
+        alert(nam+" la nam nhuan");
+    }else {
+        alert (nam+" khong phai nam nhuan")
+    }
+</script>
